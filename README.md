@@ -34,6 +34,8 @@ Some people say Ios apps has better performance than Android apps. That's not tr
 
 ## Basics Building Blocks of RxJava
 
+<img width="600" alt="Screenshot 2019-11-17 at 7 25 26 PM" src="https://user-images.githubusercontent.com/3065517/69008402-0e5a2f80-0970-11ea-8494-e0b933882531.png">
+
 We can recognize two main constructs in RxJava. If you study any Rx Java implemented code, all of the time, you will find two main constructs.
 ### Observables
 Instances of Observable class. Observables observe data streams and emit them to subscribed Observers.       
