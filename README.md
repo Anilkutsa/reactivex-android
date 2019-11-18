@@ -1,4 +1,4 @@
-# reactivex-android
+# [Reactivex Android](http://reactivex.io/intro.html)
 ReactiveX , RxJava and RxAndroid concepts and demo for android
 
 ##### What is reactive programming?   
@@ -32,7 +32,7 @@ UI events like mouse move , button click, domain events like property changed, c
 - The RxJava library was designed to give a control over a wide range of data, simultaneously on the events in the real-time. - This allows us to build highly responsive mobile applications.
 Some people say Ios apps has better performance than Android apps. That's not true if we use RxJava. we can provide same or even better performance to native Android applications with RxJava.
 
-## Basics Building Blocks of RxJava
+## [Basics Building Blocks of RxJava](http://reactivex.io/documentation/observable.html)
 
 <img width="600" alt="Screenshot 2019-11-17 at 7 25 26 PM" src="https://user-images.githubusercontent.com/3065517/69008402-0e5a2f80-0970-11ea-8494-e0b933882531.png">
 
@@ -50,7 +50,7 @@ Main observer methods(there are other methods too)
 - **onComplete()**: Observable invokes Observer's onComplete() method, when the data emission is over.
 
 ## Other main building blocks
-### Schedulers
+### [Schedulers](http://reactivex.io/documentation/scheduler.html)
 To perform operations of Observable on different threads(multi-threading). With the help of Schedulers we handle multithreading in RxJava. A scheduler can be recognized as a thread pool managing one or more threads. Whenever a Scheduler needs to execute a task, it will take a thread from its pool and run the task in that thread. Different types of Schedulers available in RxJava include - 
   - **Schedulers.io()**: This can have a limitless thread pool. Used for non CPU intensive tasks. Such as database interactions, performing network  communications and interactions with the file system.
   - **AndroidSchedulers.mainThread()**: This is the main thread or the UI thread. This is where user interactions happen
@@ -76,7 +76,7 @@ CompositeDisposable Can maintain a list of subscriptions in a pool and can dispo
 When you are using CompositeDisposable, If you call to dispose() method, you will no longer be able to add disposables to that composite disposable.
 But if you call to clear() method you can still add disposable to the composite disposable . Clear() method just clears the disposables that are currently held within the instance. 
 
-### Operators
+### [Operators](http://reactivex.io/documentation/operators)
 - **Just Operator**: Just() operator takes a list of arguments and converts the items into Observable items. It takes arguments between one to ten (But the official document says one to nine, may be it’s language specific).
 - **From()**: Unlike just, From() creates an Observable from set of items using an Iterable, which means each item is emitted one at a time.
 - **FromArray Operator**: Given an array object to Just() operator, Just() operator emits all the elements at once. Instead, if you the elements to be emitted one after one, use FromArray operator.  
@@ -92,7 +92,7 @@ But if you call to clear() method you can still add disposable to the composite 
 - **Skip**: You can ignore the first n items emitted by an Observable and attend only to those items that come after, by modifying the Observable with the Skip operator.
 - **SkipLast**: You can ignore the final n items emitted by an Observable and attend only to those items that come before them, by modifying the Observable with the SkipLast operator.
 
-### Subjects
+### [Subjects](http://reactivex.io/documentation/subject.html)
 Subject classes extends the Observable class and implements the Observer interface. That’s why they can act like both. Widely used RxJava Subjects include 
 - **Async Subject**: Only emits the last value of the Observable .  
 - **Behavior Subject**: Emits the most recently emitted item and all the subsequent items of the  Observable  .   
